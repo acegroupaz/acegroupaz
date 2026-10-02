@@ -944,24 +944,25 @@
   </div>
   <div class="form-card fade-up">
     <div class="form-title">REQUEST A FREE ESTIMATE</div>
+    <form action="https://formspree.io/f/xkjglayn" method="POST">
     <div class="form-row">
       <div class="form-group">
         <label>First Name</label>
-        <input type="text" placeholder="John"/>
+        <input type="text" name="first_name" placeholder="John"/>
       </div>
       <div class="form-group">
         <label>Last Name</label>
-        <input type="text" placeholder="Smith"/>
+        <input type="text" name="last_name" placeholder="Smith"/>
       </div>
     </div>
     <div class="form-row">
       <div class="form-group">
         <label>Phone</label>
-        <input type="tel" placeholder="(602) 555-0000"/>
+        <input type="tel" name="phone" placeholder="(602) 555-0000"/>
       </div>
       <div class="form-group">
         <label>Email</label>
-        <input type="email" placeholder="john@email.com"/>
+        <input type="email" name="email"/>
       </div>
     </div>
     <div class="form-group">
@@ -991,8 +992,11 @@
       <label>Project Description</label>
       <textarea placeholder="Tell us about your project — square footage, scope, timeline, budget range..."></textarea>
     </div>
-    <button class="form-submit" onclick="handleSubmit()">Send Request →</button>
-    <p class="form-note">We respond within 1 business day. No spam, ever.</p>
+   <input type="hidden" name="_replyto" value="sunny@acegroupaz.com"/>
+<input type="hidden" name="_subject" value="New Estimate Request — Ace Group AZ"/>
+<button type="submit" class="form-submit">Send Request →</button>
+<p class="form-note">We respond within 1 business day. No spam, ever.</p>
+</form>
   </div>
 </section>
 
